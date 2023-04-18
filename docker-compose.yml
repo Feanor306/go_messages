@@ -3,6 +3,7 @@ version: '3.6'
 services:
   redis:
     image: redis:5-alpine
+    container_name: redis
     ports:
       - 6379:6379
     restart: always
@@ -10,12 +11,11 @@ services:
   rabbitmq:
     image: rabbitmq:3.7-management
     container_name: rabbitmq
-    hostname: rabbitmq
     ports:
-      - "7000:15672"
-      - "7001:5672"
+      - "7001:15672"
+      - "5672:5672"
     environment:
-      - RABBITMQ_DEFAULT_USER=user
-      - RABBITMQ_DEFAULT_PASS=pass
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
 
   

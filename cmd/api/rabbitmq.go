@@ -6,7 +6,7 @@ import (
 
 const (
 	EXCHANGE_NAME = "messages"
-	RABBIT_MQ_CONN = "amqp://user:pass@localhost:7001/"
+	RABBIT_MQ_CONN = "amqp://guest:guest@localhost:5672/"
 	SERVER_PORT= ":8080"
 )
 

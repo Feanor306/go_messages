@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	RABBIT_MQ_CONN = "amqp://user:pass@localhost:7001/"
+	RABBIT_MQ_CONN = "amqp://guest:guest@localhost:5672/"
 	QUEUE_NAME   = "messages"
 	REDIS_ADDRESS   = "localhost:6379"
 )
